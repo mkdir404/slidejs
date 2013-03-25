@@ -1,0 +1,77 @@
+#wrap{
+	width: 600px;
+	margin: 30px auto;
+}
+#slide{
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	margin: auto;
+	border:4px solid #DDD;
+	background-color: white;
+}
+
+#slide > img{
+	float: left;
+}
+
+#prev , #next{
+	cursor: pointer;
+	margin-top:-230px;
+}
+#prev {
+	float: left;
+	margin-left:-60;
+}
+
+#next{
+	float: right;
+	margin-right:-60;
+}
+
+/*Sombras*/
+
+.efecto2
+{
+  position: relative;
+}
+.efecto2:before, .efecto2:after
+{
+/* Posiciona la sobora por detras del color de la caja*/
+                  z-index: -1;
+                  position: absolute;
+                  /* no aplico ningún contenidos HTML */
+                  content: "";
+                  /* posiciona la sombra con respecto al borde inferior, izquierdo y superior */
+                  bottom: 15px;
+                  left: 10px;
+                  top: 80%;
+                  /* configura el ancho */
+                  width: 50%;
+/* color de fondo */
+                  background: #777;
+                  /* definicion de la sombra estandar para box-shadow */
+                  -webkit-box-shadow: 0 15px 10px #777;
+                  -moz-box-shadow: 0 15px 10px #777;
+                  box-shadow: 0 15px 10px #777;
+                  /* rotacion de la sombra */
+                  -webkit-transform: rotate(-3deg);
+                  -moz-transform: rotate(-3deg);
+                  -o-transform: rotate(-3deg);
+                  -ms-transform: rotate(-3deg);
+                  transform: rotate(-3deg);
+}
+
+.efecto2:after
+{
+                  /* rotacion de la sombra */
+                  -webkit-transform: rotate(3deg);
+                  -moz-transform: rotate(3deg);
+                  -o-transform: rotate(3deg);
+                  -ms-transform: rotate(3deg);
+                  transform: rotate(3deg);
+                  /* posiciona la sombra con respecto al borde izquierdo y derecho */
+                  right: 10px;
+                  left: auto;
+}
